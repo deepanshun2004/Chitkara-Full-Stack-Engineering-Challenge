@@ -1,15 +1,18 @@
 const express = require("express");
 const cors = require("cors");
-const config = require("./config");
 const bfhlRoutes = require("./routes/bfhl.routes");
 const { notFoundHandler, errorHandler } = require("./middlewares/error.middleware");
 
 const app = express();
 
-app.use(cors({
-  origin: config.nodeEnv === "production" ? config.frontendUrl : true,
-  credentials: false
-}));
+const corsOptions = {
+  origin: "*",
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type"]
+};
+
+app.use(cors(corsOptions));
+app.options("*", cors(corsOptions));
 app.use(express.json({ limit: "1mb" }));
 
 app.get("/", (_req, res) => {
