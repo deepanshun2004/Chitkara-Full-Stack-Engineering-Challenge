@@ -1,3 +1,4 @@
+import React from "react";
 import { ClipboardCheck, Play, RotateCcw, Send } from "lucide-react";
 import { Spinner } from "./Spinner.jsx";
 import { SAMPLE_INPUT } from "../utils/inputParser.js";

@@ -1,3 +1,4 @@
+import React from "react";
 import { Activity, GitBranch, Network, ShieldAlert } from "lucide-react";
 
 export function SummaryCards({ response }) {

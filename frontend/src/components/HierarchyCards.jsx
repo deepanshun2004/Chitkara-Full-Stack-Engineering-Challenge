@@ -1,3 +1,4 @@
+import React from "react";
 import { AlertTriangle, GitFork } from "lucide-react";
 import { TreeNode } from "./TreeNode.jsx";
 

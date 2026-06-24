@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import { Network } from "lucide-react";
 import { submitEdges } from "./api/bfhlApi.js";

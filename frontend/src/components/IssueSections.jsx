@@ -1,3 +1,5 @@
+import React from "react";
+
 export function IssueSections({ invalidEntries = [], duplicateEdges = [] }) {
   return (
     <section className="issue-grid">

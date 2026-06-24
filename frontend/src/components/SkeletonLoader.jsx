@@ -1,3 +1,5 @@
+import React from "react";
+
 export function SkeletonLoader() {
   return (
     <div className="skeleton-grid" aria-label="Loading response">

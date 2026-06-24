@@ -1,3 +1,4 @@
+import React from "react";
 import { CheckCircle2, XCircle } from "lucide-react";
 
 export function Toast({ toast }) {
